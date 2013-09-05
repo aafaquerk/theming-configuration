@@ -35,4 +35,4 @@ configuration tools, we will be migrating features to this project
 over time, so expect frequent changes.
 
 
-For more information including installation instruction please see the [Configuration Wiki](https://github.com/edx/configuration/wiki).
+For more information including installation instruction please see the [Configuration Wiki](https://github.com/pdehaye/configuration/wiki).
