@@ -203,7 +203,7 @@ edxapp_theme_version: 'HEAD'
 
 # make this the public URL instead of writable
 lms_source_repo: https://github.com/pdehaye/theming-edx-platform.git
-lms_version: 'copying_files'
+lms_version: 'static_theme'
 local_requirements_file:  "{{ edx_platform_code_dir }}/requirements/edx/local.txt"
 pre_requirements_file:    "{{ edx_platform_code_dir }}/requirements/edx/pre.txt"
 post_requirements_file:   "{{ edx_platform_code_dir }}/requirements/edx/post.txt"
