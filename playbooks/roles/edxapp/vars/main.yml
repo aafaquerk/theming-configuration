@@ -73,6 +73,7 @@ edxapp_generic_auth_config:  &edxapp_generic_auth
   'CELERY_BROKER_PASSWORD': ''
 
 generic_env_config:  &edxapp_generic_env
+  'THEME_NAME' : 'stanford'
   'LMS_BASE': "{{ c_lms_base }}"
   'BOOK_URL':  ''
   'CERT_QUEUE':  'certificates'
@@ -197,13 +198,13 @@ worker_core_mult:
 #Theming
 #To turn off theming, specify edxapp_theme_name: ''
 #Stanford, for example, uses edxapp_theme_name: 'stanford'
-edxapp_theme_name: ''
+edxapp_theme_name: 'stanford'
 edxapp_theme_source_repo: 'https://github.com/Stanford-Online/edx-theme.git'
 edxapp_theme_version: 'HEAD'
 
 # make this the public URL instead of writable
 lms_source_repo: https://github.com/pdehaye/theming-edx-platform.git
-lms_version: 'static_theme'
+lms_version: 'disparate'
 local_requirements_file:  "{{ edx_platform_code_dir }}/requirements/edx/local.txt"
 pre_requirements_file:    "{{ edx_platform_code_dir }}/requirements/edx/pre.txt"
 post_requirements_file:   "{{ edx_platform_code_dir }}/requirements/edx/post.txt"
